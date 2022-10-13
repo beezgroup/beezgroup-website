@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif !important;
+}
+
+nav {
+  padding: 10px 2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 0 15px rgba(224, 192, 11, 0.856);
+          box-shadow: 0 0 15px rgba(224, 192, 11, 0.856);
+  background: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+nav h3 span {
+  color: #fff;
+}
+
+.flex-div {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-div .hamburger {
+  position: relative;
+  top: 0.5rem;
+  right: 1rem;
+  padding: 0.5rem;
+  background-color: #f3c807;
+  display: none;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.flex-div .hamburger .bar--1,
+.flex-div .hamburger .bar--2,
+.flex-div .hamburger .bar--3 {
+  background: #0f0f0f;
+  width: 28px;
+  height: 3px;
+  margin: 2px 0;
+}
+
+.flex-div .hamburger:hover {
+  background: #181817;
+  border: 1px solid #f3c807;
+  border-radius: 6px;
+}
+
+.flex-div .hamburger:hover .bar--1,
+.flex-div .hamburger:hover .bar--2,
+.flex-div .hamburger:hover .bar--3 {
+  background-color: #fffbfb;
+}
+
+.flex-div a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.hamburger[aria-expanded="true"] .navbar-icon {
+  background: transparent;
+}
+
+.hamburger[aria-expanded="true"] .navbar-icon::before,
+.hamburger[aria-expanded="true"] .navbar-icon::after {
+  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+  -webkit-transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  top: 0;
+}
+
+.nav-left h3 {
+  padding: 0.5rem;
+  margin: 0 auto;
+  background-color: #0e0e0d;
+  color: #f3c807;
+  border: 1px solid #f3c807;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.nav-right a {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+#carousel {
+  height: 13rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #111111;
+}
+
+.prelude {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.2rem;
+  padding: 1rem;
+}
+
+img {
+  border-radius: 15px;
+}
+
+#pg {
+  font-size: 1.4rem;
+  margin: 1.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#twt {
+  background-color: #279ae7;
+  width: 260px;
+  padding: 1.2rem;
+  border-radius: 20px;
+}
+
+#port {
+  background-color: #f3c807;
+  width: 200px;
+  padding: 1.2rem;
+  margin-left: 2rem;
+  border-radius: 20px;
+}
+
+#twt a {
+  color: #fff;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#twt a:hover {
+  color: #111111;
+}
+
+#port a {
+  color: #111111;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#port a:hover {
+  color: #fff;
+}
+
+@media (max-width: 970px) {
+  .flex-div {
+    background-color: whitesmoke;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .flex-div .hamburger {
+    position: absolute;
+    top: auto;
+    right: 1rem;
+    bottom: auto;
+    padding: 0.5rem;
+    background-color: #f3c807;
+    display: block;
+    cursor: pointer;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 6px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .flex-div .hamburger:hover {
+    background: #181817;
+    border: 1px solid #f3c807;
+    border-radius: 6px;
+  }
+  .flex-div .hamburger:hover .bar--1,
+  .flex-div .hamburger:hover .bar--2,
+  .flex-div .hamburger:hover .bar--3 {
+    background-color: #fffbfb;
+  }
+  .flex-div .hamburger .bar--1,
+  .flex-div .hamburger .bar--2,
+  .flex-div .hamburger .bar--3 {
+    background: #0f0f0f;
+    width: 28px;
+    height: 3px;
+    margin: 4px 0;
+  }
+  .flex-div .nav-right {
+    display: none;
+  }
+  #carousel h1 {
+    font-size: 1.4rem;
+  }
+  img {
+    display: none;
+  }
+  #pg {
+    font-size: 1rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
