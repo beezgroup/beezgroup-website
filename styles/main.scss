@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
 
 *{
     margin: 0;
@@ -72,7 +72,6 @@
             cursor: pointer;
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 1rem;
         }
     }
 
@@ -115,66 +114,12 @@
         justify-content: center;
         align-items: center;
         background-color: #111111;}
-
-    .prelude{
-        display: flex;
-        margin: 1.2rem;
-        padding: 1rem;
-    }
-
-    img{
-        border-radius: 15px;
-    }
-
-    #pg{
-        font-size: 1.4rem;
-        margin: 1.4rem;
-        align-items: center;
-        justify-content: center;
-        padding-top: 0.5rem;
-    }
-
-    .action{
-        display: flex;
-    }
-
-    #twt{
-        background-color: rgb(39, 154, 231);
-        width: 260px;
-        padding: 1.2rem;
-        border-radius: 20px;
-    }
-
-    #port{
-        background-color: rgb(243, 200, 7);
-        width: 200px;
-        padding: 1.2rem;
-        margin-left: 2rem;
-        border-radius: 20px;
-    }
-
-    #twt a{
-        color: #fff;
-        font-weight: 600;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #twt a:hover{
-        color: #111111;
-    }
-
-    #port a{
-        color:#111111;
-        font-weight: 600;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #port a:hover{
-        color: #fff;
-    }
-
+    
+        .twitter{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
 // Contact needs an earlier break-point
 @media (max-width: 970px){
@@ -228,23 +173,10 @@
         }
     }
 
-    #carousel {
-        h1 {
-            font-size: 1.4rem;
-        }
-    }
-
     img{
         display: none;
     }
 
-    #pg{
-        font-size: 1rem;
-        margin: 0.2rem;
-        padding: 0.2rem;
-        align-items: center;
-        justify-content: center; 
-    }
 }
 
 
